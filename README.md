@@ -74,10 +74,13 @@ Luego de llenar todo y aceptar se conectará con la base de datos de Odoo. Podre
 ## Preguntas:
 
 **¿Que ocurre si en el ordenador local el puerto 5432 está ocupado?**
+
 Si el puerto esta ocupado, ocurriria un error al momento de querer  inicializar el pgAdmin, oir ende no se podrá conectar a la base de datos ni a Odoo.
 
 **¿Y si lo estuviese el 8069?**
+
 Al ser de Odoo este puerto, tampoco podria inicializarse ya que apareceria error al tratar de cargar la página.
 
 **¿Cómo puedes solucionarlo?**
+
 Una forma de solucionarlo es mapeando el puerto, es decir cambiar el puerto que dimos en el documento docker-compose, deteniendo antes con un ```docker-compose down```  el contenedor y una vez modificado volviendo a lanzarlo.
